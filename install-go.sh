@@ -7,3 +7,7 @@ echo 'export GOPATH=$HOME/go' | tee -a $HOME/.profile && \
 echo 'export GOROOT=/usr/local/go' | tee -a $HOME/.profile && \
 echo 'export PATH=$PATH:$GOPATH/bin' | tee -a $HOME/.profile && \
 mkdir -p $HOME/go/{src,pkg,bin}
+
+# Logout and log in
+
+go get -u github.com/kardianos/govendor
